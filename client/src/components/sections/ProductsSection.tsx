@@ -17,7 +17,7 @@ const products = [
       mobility: "Viegli transportējama un uzstādāma jebkurā vietā"
     },
     price: "€29,500",
-    imageUrl: "https://images.unsplash.com/photo-1533577116850-9cc66cad8a9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1604609165678-096d20fab1ad?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: "eko-standard",
@@ -29,7 +29,7 @@ const products = [
       installationTime: "2 nedēļas"
     },
     price: "€49,900",
-    imageUrl: "https://images.unsplash.com/photo-1620332372374-f108c53d2460?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1704307023984-813727deade9?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: "eko-office",
@@ -41,7 +41,7 @@ const products = [
       installationTime: "1-2 nedēļas"
     },
     price: "€39,700",
-    imageUrl: "https://images.unsplash.com/photo-1608814288423-d18dc37f85e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80"
+    imageUrl: "https://plus.unsplash.com/premium_photo-1687402901004-91e2ac2f4d03?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: "eko-lux",
@@ -53,7 +53,7 @@ const products = [
       installationTime: "3 nedēļas"
     },
     price: "€84,500",
-    imageUrl: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80"
+    imageUrl: "https://plus.unsplash.com/premium_photo-1687710306880-95c72d9a19c5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ];
 
