@@ -1,0 +1,45 @@
+
+Izveido modernu un vizuāli saistošu mājas lapu ekoloģisku moduļmāju ražošanas uzņēmumam “EKO-MĀJA”. Uzņēmums ražo videi draudzīgas, moduļu mājas, kuras ir viegli transportējamas un uzstādāmas jebkurā vietā. Uzņēmums koncentrējas uz ilgtspējīgiem risinājumiem un energoefektivitāti. Klienti ir privātpersonas un nelieli uzņēmumi, kas vēlas ātru un kvalitatīvu dzīvojamo vai darba telpu. Galvenais pārdošanas kanāls ir tiešsaistes pasūtījumi un partneri būvniecības nozarē. Produktu galvenais uzsvars – ilgmūžīgi, bet pieejami risinājumi.
+
+Tīmekļa vietne demonstrēs dinamisku un profesionālu tēlu, piesaistot klientus.
+
+Galvenās sadaļas: 
+Galvenā sadaļa:
+● Lielā, vizuāli iespaidīga sadaļa ar fona video vai attēlu, kas simbolizē ģimenes dzīvi ilgspējīgā moduļu mājā. 
+● Ātrs aicinājums rīkoties (piemēram, "Piesakies konsultācijai", kas aizved uz kontaktformas sadaļu). 
+
+• Par mums: 
+● Sadaļa ar īsu un kodolīgu aprakstu par "EKO-MĀJA" misiju un vērtībām. 
+● Komandas apraksts.
+
+• Produktu apraksts: 
+● Detalizēts informācijas bloks par moduļu māju piedāvājumu, katram produktam ir šādi parametri: nosaukums, platība, materiāli, uzstādīšanas laiks, energoefektivitāte, mobilitāte, kā arī attēls un telpu plānojums.
+● Galvenais produkts ir:
+"EKO Mini" – Kompakta moduļu māja
+Platība: 25m², piemērota dzīvošanai vai ofisam
+Materiāli: Koka karkass, ekovate izolācija, saules paneļi
+Uzstādīšanas laiks: 1 nedēļa
+Energoefektivitāte: A+ klase, minimāli apkures izdevumi
+Mobilitāte: Viegli transportējama un uzstādāma jebkurā vietā
+
+•Jautājumi un atbildes
+●Biežāk uzdotie jautājumi un atbildes.
+
+• Kontaktforma: 
+● Vienkārša kontaktforma, kas satur lauku priekš klienta vārda un uzvārda, telefona numura, e-pasta, drop-down ar iespēju izvēlēties produktu, brīvā teksta lauka . 
+● Uzņēmuma adrese ar karti (Salaspils), tālrunis, e-pasts, reģistrācijas numurs. 
+
+Dizaina un tehniskās prasības: 
+• Stils: 
+● Mūsdienīgs un minimālistisks dizains ar skaidriem vizuālajiem elementiem. 
+● Animācijas un mikrosaskarnes, lai radītu profesionālu iespaidu. 
+
+• Krāsu palete: 
+● Galvenā: gaiši zaļa (#275136)
+● Akcenti: tumši zaļi un smilškrāsas, lai izceltu dabiskus materiālus (koks) un ilgspējīgumu
+● Fons: gaišs
+
+• Tehniskās prasības: 
+● Mobilajai ierīcei optimizēta, ātra ielādes laiks un SEO draudzīga struktūra. 
+● Kods ir tīrs, labi dokumentēts un viegli uzturams. 
+● Ir jābūt admin pusei, kur pārvaldīt kontaktformas, ko iesnieguši potenciālie klienti.
