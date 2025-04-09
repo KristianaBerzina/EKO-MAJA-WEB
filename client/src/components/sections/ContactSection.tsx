@@ -2,11 +2,8 @@ import { useState } from "react";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { insertContactSubmissionSchema } from "@shared/schema";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
 import ContactInfo from "@/components/ui/ContactInfo";
 import {
   Form,
@@ -30,18 +27,18 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
-// Extend the schema to add more validation
-const formSchema = insertContactSubmissionSchema.extend({
+// Define the form schema directly here
+const formSchema = z.object({
   name: z.string().min(2, "Vārds ir pārāk īss").max(100),
   phone: z.string().min(8, "Telefona numurs ir pārāk īss"),
   email: z.string().email("Lūdzu ievadiet derīgu e-pasta adresi"),
+  product: z.string().optional(),
   message: z.string().min(10, "Lūdzu ievadiet vismaz 10 simbolus"),
   privacy: z.boolean().refine(val => val === true, {
     message: "Jums jāpiekrīt privātuma politikai",
   }),
 });
 
-// Add the privacy field that's not part of the database schema
 type FormValues = z.infer<typeof formSchema>;
 
 const productOptions = [
@@ -54,6 +51,7 @@ const productOptions = [
 
 const ContactSection = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -67,31 +65,24 @@ const ContactSection = () => {
     },
   });
 
-  const submitMutation = useMutation({
-    mutationFn: (data: Omit<FormValues, 'privacy'>) => {
-      return apiRequest("POST", "/api/contact", data);
-    },
-    onSuccess: async () => {
+  function onSubmit(data: FormValues) {
+    setIsSubmitting(true);
+    
+    // Simulate a form submission with a timeout
+    setTimeout(() => {
+      // Show success message
       toast({
         title: "Paldies!",
         description: "Jūsu ziņojums ir nosūtīts. Mēs ar jums sazināsimies pēc iespējas ātrāk.",
       });
+      
+      // Reset the form
       form.reset();
-    },
-    onError: (error) => {
-      toast({
-        title: "Kļūda!",
-        description: "Neizdevās nosūtīt ziņojumu. Lūdzu, mēģiniet vēlreiz.",
-        variant: "destructive",
-      });
-      console.error("Form submission error:", error);
-    },
-  });
-
-  function onSubmit(data: FormValues) {
-    // Remove the privacy field as it's not part of our database schema
-    const { privacy, ...submissionData } = data;
-    submitMutation.mutate(submissionData);
+      setIsSubmitting(false);
+      
+      // Log form data to console (for demonstration purposes)
+      console.log("Form submitted with data:", data);
+    }, 1000);
   }
 
   return (
@@ -121,7 +112,7 @@ const ContactSection = () => {
                           <Input 
                             placeholder="Jānis Bērziņš" 
                             {...field}
-                            disabled={submitMutation.isPending}
+                            disabled={isSubmitting}
                           />
                         </FormControl>
                         <FormMessage />
@@ -139,7 +130,7 @@ const ContactSection = () => {
                           <Input 
                             placeholder="+371 20000000" 
                             {...field}
-                            disabled={submitMutation.isPending}
+                            disabled={isSubmitting}
                           />
                         </FormControl>
                         <FormMessage />
@@ -159,7 +150,7 @@ const ContactSection = () => {
                           placeholder="janis@example.com" 
                           type="email"
                           {...field}
-                          disabled={submitMutation.isPending}
+                          disabled={isSubmitting}
                         />
                       </FormControl>
                       <FormMessage />
@@ -176,7 +167,7 @@ const ContactSection = () => {
                       <Select 
                         onValueChange={field.onChange} 
                         defaultValue={field.value}
-                        disabled={submitMutation.isPending}
+                        disabled={isSubmitting}
                       >
                         <FormControl>
                           <SelectTrigger>
@@ -207,7 +198,7 @@ const ContactSection = () => {
                           placeholder="Lūdzu, pastāstiet mums vairāk par jūsu vajadzībām..." 
                           rows={4}
                           {...field}
-                          disabled={submitMutation.isPending}
+                          disabled={isSubmitting}
                         />
                       </FormControl>
                       <FormMessage />
@@ -224,7 +215,7 @@ const ContactSection = () => {
                         <Checkbox
                           checked={field.value}
                           onCheckedChange={field.onChange}
-                          disabled={submitMutation.isPending}
+                          disabled={isSubmitting}
                         />
                       </FormControl>
                       <div className="space-y-1 leading-none">
@@ -243,9 +234,9 @@ const ContactSection = () => {
                 <Button 
                   type="submit" 
                   className="w-full bg-primary hover:bg-primary/90"
-                  disabled={submitMutation.isPending}
+                  disabled={isSubmitting}
                 >
-                  {submitMutation.isPending ? "Nosūta..." : "Nosūtīt pieprasījumu"}
+                  {isSubmitting ? "Nosūta..." : "Nosūtīt pieprasījumu"}
                 </Button>
               </form>
             </Form>
