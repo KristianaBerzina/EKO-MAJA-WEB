@@ -3,7 +3,6 @@ import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
-import logoSvg from "@/assets/logo.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +46,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <nav className="flex justify-between items-center">
           <Link href="/" className="flex items-center">
-            <img src={logoSvg} alt="EKO-MĀJA Logo" className="h-10" />
+            <span className="text-primary font-heading font-bold text-2xl">EKO-MĀJA</span>
           </Link>
           
           {/* Desktop Navigation */}
