@@ -77,14 +77,32 @@ const AboutSection = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
             >
-              <img 
-                src="https://images.unsplash.com/photo-1593604572577-1c6c44fa2804?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600&q=80" 
-                alt="EKO-MĀJA komanda" 
-                className="rounded-lg shadow-lg w-full h-auto" 
-              />
-              <p className="mt-4 text-center italic text-gray-600">
-                Mūsu komanda strādā, lai radītu inovatīvus dzīvojamos risinājumus
-              </p>
+              <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
+                <h3 className="text-2xl font-heading font-semibold mb-4">Mūsu vērtības</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <span className="bg-primary text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1">1</span>
+                    <div>
+                      <h4 className="font-semibold">Ilgtspēja</h4>
+                      <p>Mēs pievēršam īpašu uzmanību ekoloģiskiem risinājumiem visos projekta posmos.</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="bg-primary text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1">2</span>
+                    <div>
+                      <h4 className="font-semibold">Inovācija</h4>
+                      <p>Pastāvīgi meklējam un ieviešam jaunākās tehnoloģijas un risinājumus.</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="bg-primary text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1">3</span>
+                    <div>
+                      <h4 className="font-semibold">Kvalitāte</h4>
+                      <p>Augstākā kvalitāte katrā detaļā ir mūsu darba pamatprincips.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </motion.div>
           </div>
           

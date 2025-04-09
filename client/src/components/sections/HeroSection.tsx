@@ -21,7 +21,7 @@ const HeroSection = () => {
         className="container mx-auto px-4 z-10 text-center"
       >
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4">
-          Ekoloģiskas, Mobīlas un<br/>Ilgtspējīgas Mājas
+          Ekoloģiskas, mobilas un<br/>ilgtspējīgas mājas
         </h1>
         
         <p className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">

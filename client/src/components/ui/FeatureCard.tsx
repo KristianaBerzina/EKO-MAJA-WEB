@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import { LucideIcon } from "lucide-react";
+import { ComponentType } from "react";
 
 interface FeatureCardProps {
   title: string;
   description: string;
-  icon: LucideIcon;
+  icon: LucideIcon | ComponentType<any>;
 }
 
 const FeatureCard = ({ title, description, icon: Icon }: FeatureCardProps) => {

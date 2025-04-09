@@ -1,7 +1,8 @@
 import SectionTitle from "@/components/ui/SectionTitle";
 import FeatureCard from "@/components/ui/FeatureCard";
 import { motion } from "framer-motion";
-import { Zap, Shield, Clock, Home, BarChart2, DollarSign } from "lucide-react";
+import { Zap, Shield, Clock, Home, BarChart2 } from "lucide-react";
+import EuroIcon from "@/components/ui/EuroIcon";
 
 const features = [
   {
@@ -32,7 +33,7 @@ const features = [
   {
     title: "Izmaksu efektivitāte",
     description: "Optimizēts ražošanas process un ilgtspējīgs dizains nodrošina izmaksu efektivitāti gan īstermiņā, gan ilgtermiņā.",
-    icon: DollarSign
+    icon: EuroIcon
   }
 ];
 
