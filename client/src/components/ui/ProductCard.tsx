@@ -88,7 +88,7 @@ const ProductCard = ({ product, isFeatured }: ProductCardProps) => {
           {isFeatured ? (
             <motion.div whileHover={{ y: -3 }} whileTap={{ scale: 0.97 }}>
               <Button asChild className="bg-primary text-white hover:bg-primary/90">
-                <a href="#contact">Pieprasīt piedāvājumu</a>
+                <a href="#contact">{product.id === "eko-mini" ? "Uzzināt vairāk" : "Pieprasīt piedāvājumu"}</a>
               </Button>
             </motion.div>
           ) : (
