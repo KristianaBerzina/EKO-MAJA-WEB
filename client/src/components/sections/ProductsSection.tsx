@@ -17,7 +17,7 @@ const products = [
       mobility: "Viegli transportējama un uzstādāma jebkurā vietā"
     },
     price: "€29,500",
-    imageUrl: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80"
   },
   {
     id: "eko-standard",
@@ -29,7 +29,7 @@ const products = [
       installationTime: "2 nedēļas"
     },
     price: "€49,900",
-    imageUrl: "https://images.unsplash.com/photo-1510627498534-cf7e9002facc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80"
   },
   {
     id: "eko-office",
@@ -41,7 +41,7 @@ const products = [
       installationTime: "1-2 nedēļas"
     },
     price: "€39,700",
-    imageUrl: "https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80"
   },
   {
     id: "eko-lux",
@@ -53,7 +53,7 @@ const products = [
       installationTime: "3 nedēļas"
     },
     price: "€84,500",
-    imageUrl: "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80"
+    imageUrl: "https://images.unsplash.com/photo-1531835551805-16d864c8d311?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80"
   }
 ];
 
