@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -45,7 +45,20 @@ const Header = () => {
     <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/95 shadow-md" : "bg-transparent"}`}>
       <div className="container mx-auto px-4 py-3">
         <nav className="flex justify-between items-center">
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center gap-2">
+            <motion.div
+              initial={{ rotate: 0 }}
+              animate={{ rotate: [0, -10, 10, -5, 5, 0] }}
+              transition={{ 
+                duration: 1.5, 
+                repeat: Infinity, 
+                repeatType: "reverse", 
+                repeatDelay: 5 
+              }}
+              className="text-primary"
+            >
+              <Home size={24} />
+            </motion.div>
             <span className="text-primary font-heading font-bold text-2xl">EKO-MĀJA</span>
           </Link>
           
