@@ -40,3 +40,12 @@ task = "packager.installForAll"
 task = "shell.exec"
 args = "npm run dev"
 waitForPort = 5000
+
+[[workflows.workflow]]
+name = "Install gh-page"
+mode = "sequential"
+author = 41271090
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm install gh-pages --save-dev"
